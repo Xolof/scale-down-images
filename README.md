@@ -16,3 +16,5 @@ Then run it.
 
 `./scale-down-images.sh`
 
+You will be asked for the path to the directory in which to scale images.
+
