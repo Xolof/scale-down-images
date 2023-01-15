@@ -1,4 +1,4 @@
-# Script for scaling down the size of image files
+# Scale down the size of image files
 
 Sometimes when you have lots of large image files it can be nice to be able to quickly scale down their size. This script lets you do that.
 
@@ -8,13 +8,15 @@ You can run the script several times until you think the images have been scaled
 
 ## How to run it
 
-First make the script executable.
+Be aware that the files will be converted in place. Before running the script, you may want to make a backup in order to preserve the original files.
+
+Make the script executable.
 
 `chmod +x scale-down-images.sh`
 
-Then run it.
+Then run the script.
 
 `./scale-down-images.sh`
 
-You will be asked for the path to the directory in which to scale images.
+You will be asked for the path to the directory in which to scale images. If you entered a valid directory you will be asked to confirm. Then the processing will begin and the progress will be displayed.
 
