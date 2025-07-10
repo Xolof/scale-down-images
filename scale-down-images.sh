@@ -46,7 +46,7 @@ filesLength=${#files[@]}
 for ((i = 0; i < $filesLength; ++i)); do
     filePath="${files[$i]}"
     printf "${teal}Converting image $(($i+1))/$filesLength:${clear} $filePath\n"
-    convert "$filePath" -scale 75% "$filePath"
+    magick "$filePath" -scale 75% "$filePath"
 done
 
 dirSizeAfter=$(getDirSize $@)
